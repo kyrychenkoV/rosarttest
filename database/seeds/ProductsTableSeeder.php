@@ -1,0 +1,178 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Carbon;
+
+class ProductsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('products')->insert([
+            [
+                'category_id'  => 1,
+                'technique_id' => 3,
+                'master_id'    => 3,
+                'title'        => 'Вечерний бал',
+                'img'          => 'pic1.jpg',
+                'size'         => '1,12 х 0,6 м',
+                'currency'     => '18000',
+                'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'category_id'  => 2,
+                'technique_id' => 2,
+                'master_id'    => 5,
+                'title'        => 'Природа',
+                'img'          => 'pic2.jpg',
+                'size'         => '1,02 х 0,6 м',
+                'currency'     => '19000',
+                'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'category_id'  => 3,
+                'technique_id' => 2,
+                'master_id'    => 2,
+                'title'        => 'Акрил',
+                'img'          => 'pic3.jpg',
+                'size'         => '1,10 х 0,6 м',
+                'currency'     => '13000',
+                'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'category_id'  => 2,
+                'technique_id' => 4,
+                'master_id'    => 2,
+                'title'        => 'Океан',
+                'img'          => 'pic4.jpg',
+                'size'         => '1,20 х 0,7 м',
+                'currency'     => '20300',
+                'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'category_id'  => 1,
+                'technique_id' => 5,
+                'master_id'    => 4,
+                'title'        => 'Девушка в зеркале',
+                'img'          => 'pic5.jpg',
+                'size'         => '1,30 х 0,7 м',
+                'currency'     => '20000',
+                'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'category_id'  => 2,
+                'technique_id' => 1,
+                'master_id'    => 2,
+                'title'        => 'Верный друг',
+                'img'          => 'pic6.jpg',
+                'size'         => '1,10 х 0,4 м',
+                'currency'     => '24000',
+                'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'category_id'  => 3,
+                'technique_id' => 1,
+                'master_id'    => 4,
+                'title'        => 'Лилии',
+                'img'          => 'pic7.jpg',
+                'size'         => '1,30 х 0,7 м',
+                'currency'     => '24000',
+                'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'category_id'  => 1,
+                'technique_id' => 4,
+                'master_id'    => 4,
+                'title'        => 'Красота',
+                'img'          => 'pic8.jpg',
+                'size'         => '1,20 х 0,5 м',
+                'currency'     => '17000',
+                'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'category_id'  => 3,
+                'technique_id' => 4,
+                'master_id'    => 2,
+                'title'        => 'Улица',
+                'img'          => 'pic11.jpg',
+                'size'         => '1,40 х 0,7 м',
+                'currency'     => '14000',
+                'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'category_id'  => 2,
+                'technique_id' => 1,
+                'master_id'    => 3,
+                'title'        => 'Пятно',
+                'img'          => 'pic12.jpg',
+                'size'         => '1,90 х 1,2 м',
+                'currency'     => '19000',
+                'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'category_id'  => 1,
+                'technique_id' => 3,
+                'master_id'    => 4,
+                'title'        => 'Собрание',
+                'img'          => 'pic13.jpg',
+                'size'         => '1,40 х 0,5 м',
+                'currency'     => '17000',
+                'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'category_id'  => 2,
+                'technique_id' => 2,
+                'master_id'    => 5,
+                'title'        => 'Семья',
+                'img'          => 'pic14.jpg',
+                'size'         => '1,40 х 0,6 м',
+                'currency'     => '21000',
+                'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'category_id'  => 3,
+                'technique_id' => 6,
+                'master_id'    => 5,
+                'title'        => 'Цветы',
+                'img'          => 'pic15.jpg',
+                'size'         => '1,40 х 0,4 м',
+                'currency'     => '11000',
+                'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'category_id'  => 1,
+                'technique_id' => 2,
+                'master_id'    => 1,
+                'title'        => 'Платье',
+                'img'          => 'pic16.jpg',
+                'size'         => '1,40 х 0,8 м',
+                'currency'     => '22000',
+                'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'category_id'  => 1,
+                'technique_id' => 4,
+                'master_id'    => 1,
+                'title'        => 'Музыканты',
+                'img'          => 'pic20.jpg',
+                'size'         => '1,44 х 0,4 м',
+                'currency'     => '22000',
+                'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'category_id'  => 3,
+                'technique_id' => 6,
+                'master_id'    => 2,
+                'title'        => 'Лицо',
+                'img'          => 'pic21.jpg',
+                'size'         => '1,44 х 0,4 м',
+                'currency'     => '15000',
+                'created_at'   => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+        ]);
+    }
+}
